@@ -140,7 +140,7 @@ button:focus {
   opacity: 0.9 !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 750px) {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
@@ -169,11 +169,22 @@ button:focus {
   padding: 0.8rem 1rem !important;
 }
 
+/* Your default styles for larger screens go here */
+
+/* Media query for screens with a maximum width of 767 pixels */
 @media (max-width: 767px) {
+  .navbar-nav .nav-item {
+    text-align: center; /* Center the navigation items */
+  }
+
   .nav-link {
-    padding: 0.7rem 1rem !important;
+    display: block; /* Display links as block elements */
+    padding: 1rem; /* Adjust the padding as needed */
+    border-bottom: 1px solid #ddd; /* Optional: Add a bottom border for separation */
   }
 }
+
+
 
 .navbar-nav .nav-item {
   position: relative;
